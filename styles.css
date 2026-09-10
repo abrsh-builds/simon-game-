@@ -1,6 +1,21 @@
 body {
+  background: linear-gradient(135deg, #2c3c4f, #112d4e, #3f4f67);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  min-height: 100vh;
+  margin: 0;
   text-align: center;
-  background-color: #011f3f;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #level-title {
@@ -40,16 +55,16 @@ body {
 }
 
 .container {
-  display: block;
+  display: grid;
   width: 50%;
   margin: auto;
 }
 
 .btn {
-  margin: 25px;
+  margin: 15px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -78,4 +93,8 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+footer {
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
 }
