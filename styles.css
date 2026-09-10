@@ -1,20 +1,48 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #011f3f;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 5%;
+  color: #fef2bf;
+}
+.rules-container {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  background-color: #001730;
+  border: 4px solid #fef2bf;
+  border-radius: 10px;
+  color: #fef2bf;
+  font-family: "Press Start 2P", cursive;
+  text-align: left;
+}
+
+.rules-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #fef2bf;
+}
+
+.rules-container ul {
+  font-size: 0.75rem;
+  line-height: 1.8;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.rules-container li {
+  margin-bottom: 8px;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {

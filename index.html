@@ -1,34 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+  <body>
+    <div class="rules-container">
+      <h2>How to Play</h2>
+      <ul>
+        <li>Press any key to start the game.</li>
+        <li>
+          Watch and listen as the game plays a sequence of colors and sounds.
+        </li>
+        <li>
+          Repeat the pattern by clicking the colored buttons in the exact same
+          order.
+        </li>
+        <li>
+          Each level adds one new color to the sequence. One wrong click ends
+          the game!
+        </li>
+      </ul>
+    </div>
+    <h1 id="level-title">Press A Key to Start</h1>
 
-<body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
 
-      <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+      </div>
 
-      <div type="button" id="red" class="btn red"></div>
-
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
     </div>
 
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">  </div>
-      <div type="button" id="blue" class="btn blue"> </div>
-
-    </div>
-
-  </div>
-
-<script src="index.js" charset="UTF-8"></script>
-</body>
-
+    <script src="index.js" charset="UTF-8"></script>
+  </body>
 </html>
